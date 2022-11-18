@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 500px;
+            height: 500px;
+            background-image: linear-gradient(45deg,red,purple,blue);
+            border-radius: 10px;
+            margin:auto;
+            margin-top: 150px;
+            transition: 1s;
+            overflow: hidden;
+        }
+        div{
+            display: grid;
+            position: absolute;
+            grid-template-columns: repeat(2,1fr);
+            width: 800px;
+            height: 500px;
+            border-radius: 10px;
+            transition: 1s;
+            margin-bottom: 100px;
+            margin-left: 40px;
+        }
+        p{
+            position: absolute;
+            width:250px;
+            height: 150px;
+            text-align: center;
+            align-self: center;
+            opacity: 0%;
+            transform: none;
+            color: white;
+            font-size: 30px;
+            margin-bottom: 300px;
+            transition: 1s;
+        }
+        img{
+            position: absolute;
+            width:442px;
+            height: 500px;
+            margin-bottom: 300px;
+            transition:1s
+        }
+
+        section:hover{
+            width: 800px;
+        }
+
+        section:hover div{
+            transform: translateX(400px);
+        }
+        section:hover img{
+            transform: scale(1.2) translateY(-42px);
+        }
+        section:hover p{
+            opacity: 100%;
+            transform: translateX(-300px);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quam veritatis hic illo totam eligendi nobis obcaecati tempora. Voluptatibus nulla est reprehenderit autem dolor quos ea molestias, possimus neque quod.</p>
+            <img src="./marv.png" width="fit-content" height="fit-content">
+        </div>
+    </section>
+</body>
+</html>
